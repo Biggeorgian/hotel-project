@@ -6,6 +6,7 @@ import logging
 logging.basicConfig(filename='bookings.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding='utf-8')
 
+# ჩავტვირთოთ მონაცემთა ბაზა
 file_path = "db.json"
 try:
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -19,6 +20,7 @@ except json.JSONDecodeError:
 
 customers = {}
 
+# ფასდაკლების თარიღებისთვის ვიყენებ დღის რიგით ნომერს
 def calculate_price_adjustement(check_date=None) -> float:
     if check_date is None: check_date = datetime.date.today()
     day_of_year = check_date.timetuple().tm_yday
@@ -80,6 +82,7 @@ class Hotel:
 
         room_price = target_room.calculate_price(nights, check_in_date)
 
+        # გამოვთვალოთ საშუალოდ რა ღირს ერთი ღამე ფასდაკლების მატრიცის გათვალისწინებით
         if nights > 0:
             avg_price_per_night = round(room_price / nights, 2)
             base_price = target_room.price_per_night
@@ -102,6 +105,7 @@ class Hotel:
             print("თანხის გადახდა და ოთახის დაჯავშნა ვერ მოხერხდა.")
             return False
 
+        # ვჯავშნით ოთახს და ვარიცხავთ ბონუსს
         customer.add_room(target_room, room_price, nights, check_in_date, 0)
         target_room.book_room()
         self.log_booking(customer, target_room, room_price, "დაიჯავშნა")
@@ -140,6 +144,7 @@ class Customer:
             choice = int(input("აირჩიეთ გასაუქმებელი ჯავშნის ნომერი (0 - გასვლა): "))
             if choice == 0: return
             if 1 <= choice <= len(self.active_bookings):
+                # ჯავშნის გაუქმებისას ვაჭრით 10% და ჩამოვაჭრით დარიცხულ ბონუსს
                 booking_to_cancel = self.active_bookings.pop(choice - 1)
                 room_to_release = booking_to_cancel["room"]
                 price_paid = booking_to_cancel["room_price"]
@@ -191,6 +196,7 @@ class Customer:
     def get_budget(self) -> float:
         return self.__budget__
 
+    # ვაძლევთ თანხის დამატების საშუალებას
     def _add_funds(self) -> bool:
         choice = input("გსურთ ბიუჯეტის შევსება? (yes/no): ").lower()
         if choice == 'yes':
@@ -206,6 +212,7 @@ class Customer:
                 print("არასწორი ფორმატია.")
         return False
 
+# უბრალოდ ვალიდაცია
 def get_numeric_input(prompt: str, input_type: type):
     while True:
         try:
@@ -213,6 +220,7 @@ def get_numeric_input(prompt: str, input_type: type):
         except ValueError:
             print("გთხოვთ, შეიყვანოთ სწორი რიცხვითი მნიშვნელობა.")
 
+# ვქმნით დამატებით "ცხრილს" მომხმარებლების შესანახად
 def get_or_create_customer(customers_db: dict) -> Customer:
     name = input("შეიყვანეთ თქვენი სახელი: ")
     if name in customers_db:
@@ -225,6 +233,7 @@ def get_or_create_customer(customers_db: dict) -> Customer:
         customers_db[name] = new_customer
         return new_customer
 
+# if პირობა, რომ ტესტმა კორექტულად იმუშაოს
 if __name__ == "__main__":
     new_hotel = Hotel("რქები და ჩლიქები", rooms_db)
     print(f"მოგესალმებით სასტუმროში \"{new_hotel.name}!\"")
