@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სასტუმრო ბათათაქუარი</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="header-03">
+    <nav class="navbar navbar-expand-lg nav-top bg-light">
+        <div class="container" style="max-width: 1100px;">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" class="logo" alt="Logo" style="height: 110px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item"><a class="nav-link" href="index.html">მთავარი</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html">მომსახურებები</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="room.html">ოთახები</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">დაჯავშნა</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">კონტაქტი</a></li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 form-control-sm" type="search" placeholder="ძიება" aria-label="Search">
+                            <button class="btn btn-outline-success btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">შესვლა</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">რეგისტრაცია</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <h1>ორადგილიანი ნომერი (Double)</h1>
+    </header>
+
+    <main class="main-container">
+
+        <nav class="d-none d-lg-flex justify-content-center my-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="index.html">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" href="hotel.html">მომსახურებები</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="room.html">ოთახები</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">დაჯავშნა</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">კონტაქტი</a></li>
+            </ul>
+        </nav>
+
+        <section class="py-5">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#roomCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#roomCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#roomCarousel" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="images/rooms/room-04.jpg" class="d-block w-100" alt="Room Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/rooms/room-05.jpg" class="d-block w-100" alt="Room Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/rooms/room-06.jpg" class="d-block w-100" alt="Room Image 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">წინა</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">შემდეგი</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <h2>ოთახის აღწერა</h2>
+                    <p>
+                        ჩვენი Double ტიპის ნომერი იდეალური არჩევანია წყვილებისთვის ან მეგობრებისთვის. ფართო და ნათელი ოთახი აღჭურვილია ერთი დიდი საწოლით (King-size) ან ორი ცალკეული საწოლით, თქვენი სურვილისამებრ. ნომერს აქვს საკუთარი აივანი, საიდანაც იშლება ულამაზესი ხედი.
+                    </p>
+                    <div class="d-grid gap-2 my-4">
+                        <a href="booking.html" class="btn btn-primary btn-lg">ნომრის დაჯავშნა</a>
+                    </div>
+
+                    <hr>
+
+                    <h4>უფასო მომსახურება</h4>
+                    <ul class="service-list">
+                        <li><i class="bi bi-check-circle-fill text-success"></i> გარე აუზი</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> შეზლონგი</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> მინერალური წყალი</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> ჩაი და ყავა ნომერში</li>
+                    </ul>
+
+                    <h4 class="mt-4">ფასიანი მომსახურება</h4>
+                    <ul class="service-list">
+                        <li><i class="bi bi-star-fill text-warning"></i> სპა პროცედურები</li>
+                        <li><i class="bi bi-star-fill text-warning"></i> სასტუმროს ბარი (შესაძლებელია ბონუს ქულების გამოყენება)</li>
+                        <li><i class="bi bi-star-fill text-warning"></i> ოთახის მინიბარი</li>
+                        <li><i class="bi bi-star-fill text-warning"></i> პერსონალური მენიუს შეკვეთა (Rსპეც. მომსახურება ნომერში)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3>დამატებითი ინფორმაცია</h3>
+                    <p>
+                        ჩვენს სტუმრებს დამატებით შეუძლიათ ისარგებლონ ტანსაცმლის რეცხვის, დაუთოების და ფეხსაცმლის წმენდის სერვისებით. თუ გსურთ თქვენი დასვენება კიდევ უფრო მრავალფეროვანი გახადოთ, შეგიძლიათ დაჯავშნოთ სხვადასხვა ტიპის ტურები ჩვენსავე სასტუმროში. დეტალური ინფორმაციისთვის მიმართეთ ადმინისტრაციას.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">
+                        <img src="images/logo.jpg" alt="Logo" style="height: 180px;">
+                    </h5>
+                    <p class="small text-muted">
+                        &copy; 2025 ყველა უფლება დაცულია.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">ნავიგაცია</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="index.html">მთავარი</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="hotel.html">მომსახურებები</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="room.html">ოთახები</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="booking.html">დაჯავშნა</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="contact.html">კონტაქტი</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">გამოგვყევით</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">X (Twitter)</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">საკონტაქტო</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">322 223 322</li>
+                        <li class="mb-2">322 223 322</li>
+                        <li class="mb-2">email@mail.em</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

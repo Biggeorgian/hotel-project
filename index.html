@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სასტუმრო ბათათაქუარი</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg nav-top bg-light">
+        <div class="container" style="max-width: 1100px;">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" class="logo" alt="Logo" style="height: 110px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">მთავარი</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html">მომსახურებები</a></li>
+                    <li class="nav-item"><a class="nav-link" href="room.html">ოთახები</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">დაჯავშნა</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">კონტაქტი</a></li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 form-control-sm" type="search" placeholder="ძიება" aria-label="Search">
+                            <button class="btn btn-outline-success btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">შესვლა</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">რეგისტრაცია</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slider/slider-01.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider/slider-02.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider/slider-03.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider/slider-04.jpg" class="d-block w-100" alt="Slide 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">წინა</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">შემდეგი</span>
+        </button>
+    </header>
+
+    <main class="main-container">
+
+        <nav class="d-none d-lg-flex justify-content-center my-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" href="hotel.html">მომსახურებები</a></li>
+                <li class="nav-item"><a class="nav-link" href="room.html">ოთახები</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">დაჯავშნა</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">კონტაქტი</a></li>
+            </ul>
+        </nav>
+
+        <section class="py-5">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="images/rooms/room-01.jpg" class="card-img-top" alt="ოთახის სურათი">
+                        <div class="card-body">
+                            <h5 class="card-title">სტანდარტული ოთახი</h5>
+                            <p class="card-text">
+                                კომფორტული ოთახი 1 ადამიანისთვის. ფასი: 80₾.
+                                უფასო საუზმე და Wi-Fi.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <a href="room.html" class="btn btn-primary w-100">დეტალური ინფორმაცია</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="images/rooms/room-02.jpg" class="card-img-top" alt="ოთახის სურათი">
+                        <div class="card-body">
+                            <h5 class="card-title">ორადგილიანი ოთახი</h5>
+                            <p class="card-text">
+                                ფართო ოთახი 2 ადამიანისთვის. ფასი: 120₾.
+                                ზღვის ხედი და აივანი.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <a href="room.html" class="btn btn-primary w-100">დეტალური ინფორმაცია</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="images/rooms/room-03.jpg" class="card-img-top" alt="ოთახის სურათი">
+                        <div class="card-body">
+                            <h5 class="card-title">ლუქსის ტიპის ნომერი</h5>
+                            <p class="card-text">
+                                აპარტამენტი VIP სტუმრებისთვის. ფასი: 250₾.
+                                ჯაკუზი და პირადი ტერასა.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <a href="room.html" class="btn btn-primary w-100">დეტალური ინფორმაცია</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/hotel.jpg" class="img-fluid rounded" alt="სასტუმროს ინტერიერი">
+                </div>
+                <div class="col-md-6">
+                    <h3>ჩვენს შესახებ</h3>
+                    <p>
+                        სასტუმრო ბათუთაქუარი გთავაზობთ მაღალი კლასის მომსახურებასა და კომფორტულ გარემოს. თითოეული ოთახი აღჭურვილია თანამედროვე ტექნიკითა და ყველა საჭირო ინვენტარით. ჩვენი მთავარი საზრუნავია, რომ თქვენი დასვენება ვაქციოთ დაუვიწყარ და ხიფათით აღსავსე თავგადასავლად.
+                    </p>
+                    <p>
+                        სასტუმროს მიმდებარე ზღვა ყველაზე სუფთაა საქართველოს აკვატორიაში. ამიტომ თავისუფლად შეძლებთ მედუზებთან ერთად ცურვას, რაც დაუვიწყარ შთაბეჭდილებებს შესძენს თქვენს ცხოვრებას.
+                    </p>
+                    <p>
+                        დამატებით გთავაზობთ სპა ცენტრს, ფიტნეს დარბაზსა და რესტორანს, რომელშიც სპეციალურად მოვიწვიეთ მიშლენის ვარსკვლავის მფლობელი შეფ მზარეული. აქ შეძლებთ დააგემოვნოთ როგორც ეროვნული, ასევე ევროპული კერძები. ბაყაყის ქვირითის ჩახოხბილი და თევზის მწნილი. ბადრიჯნის წვენზე დამზადებული ექსკლუზიური სასმელი იაგერბადრიჯანი.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">
+                        <img src="images/logo.jpg" alt="Logo" style="height: 180px;">
+                    </h5>
+                    <p class="small text-muted">
+                        &copy; 2025 ყველა უფლება დაცულია.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">ნავიგაცია</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="index.html">მთავარი</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="hotel.html">მომსახურებები</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="room.html">ოთახები</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="booking.html">დაჯავშნა</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="contact.html">კონტაქტი</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">გამოგვყევით</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">X (Twitter)</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">საკონტაქტო</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">322 223 322</li>
+                        <li class="mb-2">322 223 322</li>
+                        <li class="mb-2">email@mail.em</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სასტუმრო ბათათაქუარი</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="header-04">
+    <nav class="navbar navbar-expand-lg nav-top bg-light">
+        <div class="container" style="max-width: 1100px;">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" class="logo" alt="Logo" style="height: 110px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item"><a class="nav-link" href="index.html">მთავარი</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html">მომსახურებები</a></li>
+                    <li class="nav-item"><a class="nav-link" href="room.html">ოთახები</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">დაჯავშნა</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">კონტაქტი</a></li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 form-control-sm" type="search" placeholder="ძიება" aria-label="Search">
+                            <button class="btn btn-outline-success btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">შესვლა</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">რეგისტრაცია</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <h1>საკონტაქტო ინფორმაცია</h1>
+    </header>
+
+    <main class="main-container">
+
+        <nav class="d-none d-lg-flex justify-content-center my-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="index.html">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" href="hotel.html">მომსახურებები</a></li>
+                <li class="nav-item"><a class="nav-link" href="room.html">ოთახები</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">დაჯავშნა</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">კონტაქტი</a></li>
+            </ul>
+        </nav>
+
+        <section class="py-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">დაგვიკავშირდით</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">თქვენი სახელი</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">თქვენი ელ. ფოსტა</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">შეტყობინება</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">გაგზავნა</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="mb-4">ჩვენი მისამართი</h2>
+                    <div class="map-responsive shadow-sm rounded mb-4">
+                        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.openstreetmap.org/export/embed.html?bbox=41.70035719871522%2C41.68571280290168%2C41.70483648777009%2C41.68749552343347&amp;layer=mapnik&amp;marker=41.6866041693422%2C41.702596843242645" allowfullscreen></iframe>
+                    </div>
+
+                    <ul class="contact-info-list">
+                        <li><i class="bi bi-geo-alt-fill text-primary"></i> <strong>მისამართი:</strong> მწვანე კონცხი, ბათუმი, საქართველო</li>
+                        <li><i class="bi bi-telephone-fill text-primary"></i> <strong>ტელეფონი:</strong> +995 555 123 456</li>
+                        <li><i class="bi bi-envelope-fill text-primary"></i> <strong>ელ. ფოსტა:</strong> contact@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">
+                        <img src="images/logo.jpg" alt="Logo" style="height: 180px;">
+                    </h5>
+                    <p class="small text-muted">
+                        &copy; 2025 ყველა უფლება დაცულია.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">ნავიგაცია</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="index.html">მთავარი</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="hotel.html">მომსახურებები</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="room.html">ოთახები</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="booking.html">დაჯავშნა</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="contact.html">კონტაქტი</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">გამოგვყევით</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">X (Twitter)</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">საკონტაქტო</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">322 223 322</li>
+                        <li class="mb-2">322 223 322</li>
+                        <li class="mb-2">email@mail.em</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

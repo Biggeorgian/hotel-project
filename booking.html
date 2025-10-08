@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სასტუმრო ბათათაქუარი</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="header-02">
+    <nav class="navbar navbar-expand-lg nav-top bg-light">
+        <div class="container" style="max-width: 1100px;">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" class="logo" alt="Logo" style="height: 110px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item"><a class="nav-link" href="index.html">მთავარი</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotel.html">მომსახურებები</a></li>
+                    <li class="nav-item"><a class="nav-link" href="room.html">ოთახები</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">დაჯავშნა</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">კონტაქტი</a></li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 form-control-sm" type="search" placeholder="ძიება" aria-label="Search">
+                            <button class="btn btn-outline-success btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">შესვლა</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">რეგისტრაცია</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <h1>ოთახის დაჯავშნა</h1>
+    </header>
+
+    <main class="main-container">
+
+        <nav class="d-none d-lg-flex justify-content-center my-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="index.html">მთავარი</a></li>
+                <li class="nav-item"><a class="nav-link" href="hotel.html">მომსახურებები</a></li>
+                <li class="nav-item"><a class="nav-link" href="room.html">ოთახები</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="booking.html">დაჯავშნა</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">კონტაქტი</a></li>
+            </ul>
+        </nav>
+
+        <section class="py-5">
+            <h2 class="text-center mb-4">შეავსეთ პირადი მონაცემები</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="checkin-date" class="form-label">შესვლის თარიღი</label>
+                                <input type="date" class="form-control" id="checkin-date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="checkout-date" class="form-label">გამოსვლის თარიღი</label>
+                                <input type="date" class="form-control" id="checkout-date" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="room-type" class="form-label">ოთახის ტიპი</label>
+                                <select id="room-type" class="form-select" required>
+                                    <option selected disabled value="">აირჩიეთ...</option>
+                                    <option value="single">Single (2 პერსონა)</option>
+                                    <option value="double">Double (4 პერსონა)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="first-name" class="form-label">სტუმრის სახელი</label>
+                                <input type="text" class="form-control" id="first-name" placeholder="მაგ: გიორგი" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="last-name" class="form-label">სტუმრის გვარი</label>
+                                <input type="text" class="form-control" id="last-name" placeholder="მაგ: ბერიძე" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="adults" class="form-label">ზრდასრულების რაოდენობა</label>
+                                <input type="number" class="form-control" id="adults" value="1" min="1">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="children" class="form-label">ბავშვების რაოდენობა</label>
+                                <input type="number" class="form-control" id="children" value="0" min="0">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">ელ. ფოსტა</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">ტელეფონის ნომერი</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+995 555 123456">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="requests" class="form-label">სპეციალური მოთხოვნები</label>
+                                <textarea class="form-control" id="requests" rows="3" placeholder="დამატებითი საწოლი, საბავშვო ეტლი და ა.შ."></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">დაჯავშნა</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="main-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">
+                        <img src="images/logo.jpg" alt="Logo" style="height: 180px;">
+                    </h5>
+                    <p class="small text-muted">
+                        &copy; 2025 ყველა უფლება დაცულია.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">ნავიგაცია</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="index.html">მთავარი</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="hotel.html">მომსახურებები</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="room.html">ოთახები</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="booking.html">დაჯავშნა</a></li>
+                        <li class="nav-item"><a class="text-white text-decoration-none" href="contact.html">კონტაქტი</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">გამოგვყევით</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">X (Twitter)</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">საკონტაქტო</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">322 223 322</li>
+                        <li class="mb-2">322 223 322</li>
+                        <li class="mb-2">email@mail.em</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
