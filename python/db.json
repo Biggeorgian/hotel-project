@@ -1,0 +1,86 @@
+[
+  {
+    "room_number": 101,
+    "room_type": "Single",
+    "price_per_night": 95.50,
+    "is_available": true,
+    "max_guests": 2
+  },
+  {
+    "room_number": 102,
+    "room_type": "Double",
+    "price_per_night": 140.00,
+    "is_available": true,
+    "max_guests": 4
+  },
+  {
+    "room_number": 103,
+    "room_type": "Single",
+    "price_per_night": 89.99,
+    "is_available": true,
+    "max_guests": 2
+  },
+  {
+    "room_number": 104,
+    "room_type": "Double",
+    "price_per_night": 155.00,
+    "is_available": true,
+    "max_guests": 4
+  },
+  {
+    "room_number": 105,
+    "room_type": "Double",
+    "price_per_night": 135.75,
+    "is_available": true,
+    "max_guests": 4
+  },
+  {
+    "room_number": 106,
+    "room_type": "Single",
+    "price_per_night": 105.00,
+    "is_available": true,
+    "max_guests": 2
+  },
+  {
+    "room_number": 107,
+    "room_type": "Double",
+    "price_per_night": 160.00,
+    "is_available": true,
+    "max_guests": 4
+  },
+  {
+    "room_number": 108,
+    "room_type": "Single",
+    "price_per_night": 99.00,
+    "is_available": true,
+    "max_guests": 2
+  },
+  {
+    "room_number": 109,
+    "room_type": "Double",
+    "price_per_night": 145.50,
+    "is_available": true,
+    "max_guests": 4
+  },
+  {
+    "room_number": 110,
+    "room_type": "Single",
+    "price_per_night": 110.00,
+    "is_available": true,
+    "max_guests": 2
+  },
+  {
+    "room_number": 111,
+    "room_type": "Double",
+    "price_per_night": 175.00,
+    "is_available": true,
+    "max_guests": 4
+  },
+  {
+    "room_number": 112,
+    "room_type": "Double",
+    "price_per_night": 150.00,
+    "is_available": true,
+    "max_guests": 4
+  }
+]
