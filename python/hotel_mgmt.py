@@ -74,10 +74,10 @@ class Hotel:
                                check_in_date: datetime.date) -> bool:
         target_room = next((r for r in self.rooms if r.room_number == room_number), None)
         if target_room is None:
-            print(f"შეცდომა: ოთახი №{room_number} ვერ მოიძებნა.");
+            print(f"შეცდომა: ოთახი №{room_number} ვერ მოიძებნა.")
             return False
         if not target_room.is_available:
-            print(f"ოთახი №{room_number} დაკავებულია.");
+            print(f"ოთახი №{room_number} დაკავებულია.")
             return False
 
         room_price = target_room.calculate_price(nights, check_in_date)
@@ -137,7 +137,7 @@ class Customer:
 
     def remove_room(self, hotel: Hotel):
         if not self.active_bookings:
-            print("გასაუქმებელი ჯავშნები არ გაქვთ.");
+            print("გასაუქმებელი ჯავშნები არ გაქვთ.")
             return
         self.show_booking_summary()
         try:
@@ -224,7 +224,7 @@ def get_numeric_input(prompt: str, input_type: type):
 def get_or_create_customer(customers_db: dict) -> Customer:
     name = input("შეიყვანეთ თქვენი სახელი: ")
     if name in customers_db:
-        print(f"მოგესალმებით, {name}!");
+        print(f"მოგესალმებით, {name}!")
         return customers_db[name]
     else:
         print(f"მოგესალმებით, {name}! (შეიქმნა ახალი ანგარიში)")
@@ -247,7 +247,7 @@ if __name__ == "__main__":
                        "  (0) სისტემიდან გასვლა\n"
                        "თქვენი არჩევანი: ")
         if choice == "0":
-            print("ნახვამდის!");
+            print("ნახვამდის!")
             break
         elif choice == "1":
             new_hotel.show_available_rooms()
